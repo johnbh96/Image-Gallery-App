@@ -71,3 +71,4 @@ If you finish the main requirements of the project and have time left over, you 
 ## Conclusion
 
 This project will allow you to demonstrate your skills in building a Flutter app that uses APIs to load images and manage state. By completing this project, you will have gained experience in working with APIs, building UI layouts, and using state management solutions in Flutter. We hope you enjoy working on this project and look forward to seeing what you create! If you have any questions or issues, please don't hesitate to reach out to us. Good luck!
+

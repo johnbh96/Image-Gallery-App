@@ -15,6 +15,19 @@ void main() {
       final imageFinder = find.byType(Image);
       expect(imageFinder, findsNWidgets(6));
     });
+
+    testWidgets('Navigates to FullscreenImage widget when image is tapped',
+        (WidgetTester tester) async {
+      await tester.pumpWidget(MaterialApp(home: GalleryPage()));
+
+      final imageFinder = find.byType(Image).first;
+      expect(imageFinder, findsOneWidget);
+
+      await tester.tap(imageFinder);
+      await tester.pumpAndSettle();
+
+      expect(find.byType(FullscreenImage), findsOneWidget);
+    });
   });
 
   group('FullscreenImage widget', () {
